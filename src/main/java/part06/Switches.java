@@ -15,5 +15,38 @@ package part06;
 //    saying in YOUR OWN WORDS what that line does.
 
 public class Switches {
+    public static void main(String[] args) {
+        // string named day is created, day is called Pizza
+        String day = "Pizza";
+        // switch, takes in string named day
+        switch (day) {
+            // test string day, in case for Sunday
+            case "Sunday":
+                // if Sunday, prints the following
+                System.out.println("It is Sunday");
+                // ending of this case
+                break;
+                case "Monday":
+                    System.out.println("It is Monday");
+                    break;
+                    case "Tuesday":
+                        System.out.println("It is Tuesday");
+                        break;
+                        case "Wednesday":
+                            System.out.println("It is Wednesday");
+                            break;
+                            case "Thursday":
+                                System.out.println("It is Thursday");
+                                break;
+                                case "Friday":
+                                    System.out.println("It is Friday");
+                                    break;
+                                    case "Saturday":
+                                        System.out.println("It is Saturday");
+                                        break;
+                                        default:
+                                            System.out.println(day + " is not a day");
+        }
+    }
 
 }
