@@ -56,7 +56,7 @@ public class Challenge {
                                     return "weekend";
 
                                     default:
-                                        return "invalid";
+                                        return "invalid"; //
 
 
         }
