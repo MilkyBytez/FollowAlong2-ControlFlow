@@ -14,6 +14,42 @@ package part07;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
+import java.util.Scanner;
+
 public class LogicalOperators {
+    public static void main(String[] args) {
+        // new integer called temp is created with value set at 35
+        int temp = 35;
+        // condition if statement testing if temp is larger than 30
+        if (temp > 30) {
+            // if condition is true, prints the following
+            System.out.println("It is hot outside!");
+            // 2nd condition being tested, checks for temp if larger or equal to 20
+            // AND less or equal to 30
+        } else if (temp >= 20 && temp <= 30) {
+            // if condition is true, prints the following
+            System.out.println("It is warm outside!");
+            // Last resort, else statement
+        } else {
+            // 3rd condition since now were true, prints the following
+            System.out.println("It is cold outside!");
+        }
+        // creation of scanner, called scanner
+        Scanner scanner = new Scanner(System.in);
+        // Askes user a question for input
+        System.out.println("You are playing a game! Press q or Q to quit");
+        // New string created called response and takes scanner input
+        String response = scanner.next();
+
+        // first condition, checks response is equal to char q OR char Q
+        if (response.equals("q") || response.equals("Q")) {
+            // if this conditon is met, prints the following
+            System.out.println("You quit the game");
+            // Otherwise, else if the previous condition was not met
+        } else {
+            // Prints the following
+            System.out.println("You are still playing the game *pew pew*");
+        }
+    }
 
 }
