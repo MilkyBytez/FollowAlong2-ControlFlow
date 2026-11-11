@@ -40,6 +40,7 @@ public class WhileLoops {
             name = scanner.nextLine();
             // while name is blank, it will continue to ask this question until fulfilled
         } while (name.isBlank());
-    }
 
+    }
+    // explained
 }
